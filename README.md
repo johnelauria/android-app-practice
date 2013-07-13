@@ -1,0 +1,1 @@
+This is just a simple android application built to enhance and learn the best practices for developing an android app. 

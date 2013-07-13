@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter a Command"
+        android:textColor="#fff044" />
+
+    <EditText
+        android:id="@+id/cmdToExec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#eaeaea"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/executeCmd"
+            android:layout_width="fill_parent"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:text="Execute" />
+
+        <ToggleButton
+            android:id="@+id/switch1"
+            android:layout_width="fill_parent"
+            android:layout_weight="80"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/backMenuButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Back to Main Menu"/>
+    <TextView
+        android:id="@+id/responseText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#f40"
+        android:textSize="20dp"
+        android:text="Invalid Text" />
+
+</LinearLayout>
