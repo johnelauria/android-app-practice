@@ -41,7 +41,7 @@
             android:text="Subject: " />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/subjInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="50"
@@ -49,14 +49,14 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/msgContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/sendMsg"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Send" />

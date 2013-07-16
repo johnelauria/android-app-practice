@@ -3,6 +3,7 @@
  */
 package john.maenard.androidexercise;
 
+import java.util.Locale;
 import java.util.Random;
 
 import android.app.Activity;
