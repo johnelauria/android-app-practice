@@ -25,32 +25,56 @@ public final class R {
         public static final int me=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080012;
+        public static final int Instruction=0x7f080018;
+        public static final int RButtonSubmit=0x7f080013;
+        public static final int action_settings=0x7f080026;
         public static final int addOne=0x7f080001;
+        public static final int almostCorrect=0x7f080023;
         public static final int analogClock1=0x7f08000b;
-        public static final int backMenuButton=0x7f080010;
+        public static final int answerList=0x7f080021;
+        public static final int backMenuButton=0x7f08001f;
         public static final int capturedImage=0x7f080003;
-        public static final int cmdToExec=0x7f08000d;
+        public static final int cmdToExec=0x7f08001c;
+        public static final int correctAnswer=0x7f080022;
         public static final int emailInput=0x7f080007;
         public static final int emailLabel=0x7f080006;
-        public static final int executeCmd=0x7f08000e;
+        public static final int etSend=0x7f080016;
+        public static final int executeCmd=0x7f08001d;
+        public static final int harryPooter=0x7f08000f;
+        public static final int ironMan=0x7f080011;
+        public static final int movieComment=0x7f080014;
+        public static final int movieLabel=0x7f08000d;
         public static final int msgContent=0x7f080009;
         public static final int openCamera=0x7f080004;
-        public static final int responseText=0x7f080011;
+        public static final int pacificRim=0x7f080012;
+        public static final int receivedString=0x7f08000c;
+        public static final int responseText=0x7f080020;
+        public static final int resultToAnswer=0x7f08001a;
+        public static final int selectedMovie=0x7f08000e;
+        public static final int sendBSend=0x7f080017;
         public static final int sendMsg=0x7f08000a;
         public static final int setWallpaper=0x7f080005;
+        public static final int starWars=0x7f080010;
+        public static final int startQuestion=0x7f080019;
+        public static final int stupidAnswer=0x7f080024;
         public static final int subjInput=0x7f080008;
+        public static final int submitAnswer=0x7f080025;
         public static final int subtractOne=0x7f080002;
-        public static final int switch1=0x7f08000f;
-        public static final int textView1=0x7f08000c;
+        public static final int switch1=0x7f08001e;
+        public static final int textView1=0x7f08001b;
         public static final int totalView=0x7f080000;
+        public static final int tvSend=0x7f080015;
     }
     public static final class layout {
         public static final int activity_dashboard=0x7f030000;
         public static final int camera=0x7f030001;
         public static final int email=0x7f030002;
-        public static final int splashscreen=0x7f030003;
-        public static final int textplay=0x7f030004;
+        public static final int receive=0x7f030003;
+        public static final int send=0x7f030004;
+        public static final int splashscreen=0x7f030005;
+        public static final int startquestion=0x7f030006;
+        public static final int textplay=0x7f030007;
+        public static final int thequestion=0x7f030008;
     }
     public static final class menu {
         public static final int dashboard=0x7f070000;

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/receivedString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="#eaeaea" />
+    
+    <TextView
+        android:id="@+id/movieLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Your favorite movie: "
+        android:textColor="#eaeaea" />
+
+    <RadioGroup
+        android:id="@+id/selectedMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/harryPooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter"
+            android:textColor="#eaeaea" />
+
+        <RadioButton
+            android:id="@+id/starWars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Star Wars"
+            android:textColor="#eaeaea" />
+
+        <RadioButton
+            android:id="@+id/ironMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iron Man"
+            android:textColor="#eaeaea" />
+
+        <RadioButton
+            android:id="@+id/pacificRim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pacific Rim"
+            android:textColor="#eaeaea" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/RButtonSubmit"
+        android:layout_width="wrap_content"
+        android:textColor="#0af"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/movieComment"
+        android:layout_width="wrap_content"
+        android:textColor="#0af"
+        android:layout_height="wrap_content"
+        android:text="Choose Something" />
+
+</LinearLayout>

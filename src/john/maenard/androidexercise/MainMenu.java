@@ -17,7 +17,7 @@ import android.widget.ListView;
  */
 public class MainMenu extends ListActivity {
 	String menus[] = { "Dashboard", "TextPlay", "Email", "Camera",
-			"example4", "example5" };
+			"Send", "StartQuestion" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

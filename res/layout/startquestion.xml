@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#222"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0af"
+        android:text="Answer the question on the next page. Result will be displayed here after taking the test. To start, click the start button below"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/startQuestion"
+        android:layout_width="fill_parent"
+        android:textColor="#0af"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+    
+    <TextView
+        android:id="@+id/resultToAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textColor="#0af"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

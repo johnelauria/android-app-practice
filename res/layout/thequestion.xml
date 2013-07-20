@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:textColor="#eaeaea"
+        android:layout_height="wrap_content"
+        android:text="Mary's husband's father-in-law is Mary's husband's brother's brother-in-law, and Mary's sister-in-law is Mary's brother's stepmother. How did this happen?" />
+
+    <RadioGroup
+        android1:id="@+id/answerList"
+        android1:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android1:layout_height="wrap_content" >
+
+        <RadioButton
+            android1:id="@+id/correctAnswer"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android:textColor="#0af"
+            android1:text="Mary's father married the sister of Mary's husband." />
+
+        <RadioButton
+            android1:id="@+id/almostCorrect"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android:textColor="#0af"
+            android1:text="Mary's husband is the son of Mary's father-in-law." />
+
+        <RadioButton
+            android1:id="@+id/stupidAnswer"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android:textColor="#0af"
+            android1:text="Mary's father-in-law married Mary." />
+    </RadioGroup>
+
+    <Button
+        android1:id="@+id/submitAnswer"
+        android1:layout_width="fill_parent"
+        android1:layout_height="wrap_content"
+        android:textColor="#0af"
+        android1:text="Submit Answer" />
+
+</LinearLayout>

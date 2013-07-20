@@ -3,10 +3,14 @@
  */
 package john.maenard.androidexercise;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Button;
@@ -21,7 +25,7 @@ public class Camera extends Activity implements View.OnClickListener {
 	ImageButton openCamera;
 	Button setWallpaper;
 	Intent i;
-	final static int cameraData = 0;
+	int cameraData = 0;
 	Bitmap bmp;
 
 	/*
@@ -36,6 +40,7 @@ public class Camera extends Activity implements View.OnClickListener {
 		setContentView(R.layout.camera);
 		setVariables();
 		openCamera.setOnClickListener(this);
+		setWallpaper.setOnClickListener(this);
 	}
 
 	@Override
@@ -53,6 +58,8 @@ public class Camera extends Activity implements View.OnClickListener {
 		displayImage = (ImageView) findViewById(R.id.capturedImage);
 		openCamera = (ImageButton) findViewById(R.id.openCamera);
 		setWallpaper = (Button) findViewById(R.id.setWallpaper);
+		InputStream is = getResources().openRawResource(R.drawable.ic_launcher);
+		bmp = BitmapFactory.decodeStream(is);
 	}
 
 	@Override
@@ -65,7 +72,12 @@ public class Camera extends Activity implements View.OnClickListener {
 			break;
 			
 		case(R.id.setWallpaper):
-			
+			try {
+				setWallpaper(bmp);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			break;
 		}
 	}
