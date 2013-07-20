@@ -72,5 +72,21 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <!--created by johnmaenard at 2013-07-20 15:55:25-->
+        <activity android:label="About this app" android:name=".AboutUs" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="john.maenard.androidexercise.ABOUTUS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--created by johnmaenard at 2013-07-20 16:09:44-->
+        <activity android:label="About the Developer" 
+            android:name=".AboutDeveloper"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="john.maenard.androidexercise.ABOUTDEVELOPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

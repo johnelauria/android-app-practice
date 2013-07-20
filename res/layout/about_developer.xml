@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/aboutDeveloperContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My name is John Maenard V. Elauria. At this time of writing (July 20, 2013), I am comfortable developing Web Based Applications using Ruby On Rails, PHP and Code Igniter. And to spice up the Look and feel, I am able to use Javascript. And when necessary, I would use jQuery or Bootstrap to make them look good. I am currently in the process of reaching the intermediate level of Android programming and I am confident about my progress since I only started learning Android SDK last week. I can also speak well in English, Spanish and Tagalog. Cheers!" />
+    </LinearLayout>
+
+</ScrollView>

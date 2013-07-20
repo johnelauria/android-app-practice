@@ -6,6 +6,9 @@ package john.maenard.androidexercise;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -39,6 +42,37 @@ public class MainMenu extends ListActivity {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		super.onCreateOptionsMenu(menu);
+		MenuInflater blowup = getMenuInflater();
+		blowup.inflate(R.menu.mainmenu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		switch(item.getItemId()) {
+		case(R.id.aboutUsMenu):
+			Intent aboutUsPopup = new Intent("john.maenard.androidexercise.ABOUTUS");
+			startActivity(aboutUsPopup);
+			break;
+		case(R.id.aboutDeveloper):
+			Intent aboutDevPopup = new Intent("john.maenard.androidexercise.ABOUTDEVELOPER");
+			startActivity(aboutDevPopup);
+			break;
+		case(R.id.preferencesMenu):
+			
+			break;
+		case(R.id.exitApp):
+			
+			break;
+		}
+		return false;
 	}
 
 }

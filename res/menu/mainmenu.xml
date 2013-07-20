@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:title="About this Application"
+        android:id="@+id/aboutUsMenu"/>
+    
+    <item android:title="About the developer"
+        android:id="@+id/aboutDeveloper"/>
+        
+    <item
+        android:title="Preferences"
+        android:id="@+id/preferencesMenu"/>
+    
+    <item
+        android:title="Exit"
+        android:id="@+id/exitApp"/>
+
+</menu>

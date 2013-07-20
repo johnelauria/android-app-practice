@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is just an application I created to learn and enhance my abilities in Android Application Development. This application is not intended to be useful for anyone except for myself. I can use this as a reference in order to efficiently create useful android applications in the future." />
+
+</LinearLayout>
