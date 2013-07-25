@@ -10,8 +10,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 /**
@@ -20,12 +21,14 @@ import android.widget.ListView;
  */
 public class MainMenu extends ListActivity {
 	String menus[] = { "Dashboard", "TextPlay", "Email", "Camera",
-			"Send", "StartQuestion" };
+			"Send", "StartQuestion", "GFX", "GFXSurface" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setListAdapter(new ArrayAdapter<String>(MainMenu.this,
 				android.R.layout.simple_list_item_1, menus));
 	}
@@ -66,10 +69,11 @@ public class MainMenu extends ListActivity {
 			startActivity(aboutDevPopup);
 			break;
 		case(R.id.preferencesMenu):
-			
+			Intent preferences = new Intent("john.maenard.androidexercise.PREFS");
+			startActivity(preferences);
 			break;
 		case(R.id.exitApp):
-			
+			finish();
 			break;
 		}
 		return false;

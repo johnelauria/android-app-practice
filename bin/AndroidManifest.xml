@@ -80,13 +80,23 @@
             </intent-filter>
         </activity>
         <!--created by johnmaenard at 2013-07-20 16:09:44-->
-        <activity android:label="About the Developer" 
-            android:name=".AboutDeveloper"
-            android:theme="@android:style/Theme.Dialog">
+        <activity android:label="About the Developer"
+            android:name=".AboutDeveloper" android:theme="@android:style/Theme.Dialog">
             <intent-filter>
                 <action android:name="john.maenard.androidexercise.ABOUTDEVELOPER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <!--created by johnmaenard at 2013-07-21 15:46:58-->
+        <activity android:label="@string/app_name" android:name=".Prefs">
+            <intent-filter>
+                <action android:name="john.maenard.androidexercise.PREFS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--created by johnmaenard at 2013-07-24 09:06:15-->
+        <activity android:label="Making Animations" android:name=".GFX"/>
+        <!--created by johnmaenard at 2013-07-24 21:59:51-->
+        <activity android:label="Drag the ball" android:name=".GFXSurface"/>
     </application>
 </manifest>

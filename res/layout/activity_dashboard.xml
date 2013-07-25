@@ -21,19 +21,17 @@
     
     <Button
         android:id="@+id/addOne"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#eaeaea"
         android:layout_marginBottom="10dp"
-        android:text="Add One"/>
+        android:background="@drawable/custom"/>
     
     <Button
         android:id="@+id/subtractOne"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#eaeaea"
-        android:text="Subtract One"/>
+        android:background="@drawable/subtract"/>
 
 </LinearLayout>
