@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your favorite alcoholic drink" />
+
+    <EditText
+        android:id="@+id/etDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this drink" />
+
+    <EditText
+        android:id="@+id/etRateDrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+        
+    <Button
+        android:id="@+id/bSaveDrink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate" />
+    
+    <Button
+        android:id="@+id/bLoadDrinks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Load" />
+
+</LinearLayout>

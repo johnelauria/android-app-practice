@@ -20,15 +20,18 @@ import android.widget.ListView;
  * 
  */
 public class MainMenu extends ListActivity {
-	String menus[] = { "Dashboard", "TextPlay", "Email", "Camera",
-			"Send", "StartQuestion", "GFX", "GFXSurface" };
+	String menus[] = { "Dashboard", "TextPlay", "Email", "Camera", "Send",
+			"StartQuestion", "GFX", "GFXSurface", "Slider", "Tabs",
+			"SimpleBrowser", "Flipper", "SharedPrefs", "InternalStorage",
+			"ExternalStorage", "SqliteDatabase" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setListAdapter(new ArrayAdapter<String>(MainMenu.this,
 				android.R.layout.simple_list_item_1, menus));
 	}
@@ -39,7 +42,8 @@ public class MainMenu extends ListActivity {
 		String chosenMenu = menus[position];
 		super.onListItemClick(l, v, position, id);
 		try {
-			Class ourClass = Class.forName("john.maenard.androidexercise." + chosenMenu);
+			Class ourClass = Class.forName("john.maenard.androidexercise."
+					+ chosenMenu);
 			Intent ourIntent = new Intent(MainMenu.this, ourClass);
 			startActivity(ourIntent);
 		} catch (Exception e) {
@@ -59,20 +63,23 @@ public class MainMenu extends ListActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// TODO Auto-generated method stub
-		switch(item.getItemId()) {
-		case(R.id.aboutUsMenu):
-			Intent aboutUsPopup = new Intent("john.maenard.androidexercise.ABOUTUS");
+		switch (item.getItemId()) {
+		case (R.id.aboutUsMenu):
+			Intent aboutUsPopup = new Intent(
+					"john.maenard.androidexercise.ABOUTUS");
 			startActivity(aboutUsPopup);
 			break;
-		case(R.id.aboutDeveloper):
-			Intent aboutDevPopup = new Intent("john.maenard.androidexercise.ABOUTDEVELOPER");
+		case (R.id.aboutDeveloper):
+			Intent aboutDevPopup = new Intent(
+					"john.maenard.androidexercise.ABOUTDEVELOPER");
 			startActivity(aboutDevPopup);
 			break;
-		case(R.id.preferencesMenu):
-			Intent preferences = new Intent("john.maenard.androidexercise.PREFS");
+		case (R.id.preferencesMenu):
+			Intent preferences = new Intent(
+					"john.maenard.androidexercise.PREFS");
 			startActivity(preferences);
 			break;
-		case(R.id.exitApp):
+		case (R.id.exitApp):
 			finish();
 			break;
 		}

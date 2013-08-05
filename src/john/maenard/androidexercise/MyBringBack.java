@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Rect;
-import android.graphics.Typeface;
 import android.view.View;
 
 public class MyBringBack extends View {

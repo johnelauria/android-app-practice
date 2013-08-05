@@ -3,6 +3,9 @@
     package="john.maenard.androidexercise" xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" android:theme="@style/AppTheme">
@@ -98,5 +101,24 @@
         <activity android:label="Making Animations" android:name=".GFX"/>
         <!--created by johnmaenard at 2013-07-24 21:59:51-->
         <activity android:label="Drag the ball" android:name=".GFXSurface"/>
+        <!--created by johnmaenard at 2013-07-27 10:24:52-->
+        <activity android:label="Sliders" android:name=".Slider"/>
+        <!--created by johnmaenard at 2013-07-27 12:29:15-->
+        <activity android:name=".Tabs"/>
+        <!--created by johnmaenard at 2013-07-28 10:31:38-->
+        <activity android:name=".SimpleBrowser"/>
+        <!--created by johnmaenard at 2013-07-28 14:35:15-->
+        <activity android:name=".Flipper"/>
+        <!--created by johnmaenard at 2013-07-28 15:17:17-->
+        <activity android:name=".SharedPrefs"/>
+        <activity android:label="Internal Storage" android:name=".InternalStorage"/>
+        <activity android:label="External Storage" android:name=".ExternalStorage" />
+        <activity android:label="Saving in Sqlite Database" android:name=".SqliteDatabase" />
+        <activity android:label="Reading from Sqlite Database" android:name=".SQLView">
+            <intent-filter>
+                <action android:name="john.maenard.androidexercise.SQLVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+		</activity>
     </application>
 </manifest>
