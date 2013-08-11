@@ -12,7 +12,6 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.MotionEvent;
-import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -94,14 +93,12 @@ public class GFXSurface extends Activity implements OnTouchListener {
 	
 	public class MyBringBackSurface extends SurfaceView implements Runnable {
 		
-		SurfaceHolder ourHolder;
 		Thread ourThread = null;
 		Boolean isRunning = true;
 
 		public MyBringBackSurface(Context context) {
 			// TODO Auto-generated constructor stub
 			super(context);
-			ourHolder = getHolder();
 		}
 		
 		public void pause() {
@@ -127,10 +124,10 @@ public class GFXSurface extends Activity implements OnTouchListener {
 		public void run() {
 			// TODO Auto-generated method stub
 			while(isRunning) {
-				if(!ourHolder.getSurface().isValid())
+				if(!getHolder().getSurface().isValid())
 					continue;
 				
-				Canvas canvas = ourHolder.lockCanvas();
+				Canvas canvas = getHolder().lockCanvas();
 				canvas.drawRGB(250, 250, 250);
 				if (x != 0 && y != 0) {
 					canvas.drawBitmap(testBall, x-(testBall.getWidth()/2), y-(testBall.getHeight()/2), null);
@@ -144,7 +141,7 @@ public class GFXSurface extends Activity implements OnTouchListener {
 				}
 				aniX = aniX + scaleX;
 				aniY = aniY + scaleY;			
-				ourHolder.unlockCanvasAndPost(canvas);
+				getHolder().unlockCanvasAndPost(canvas);
 			}
 		}
 

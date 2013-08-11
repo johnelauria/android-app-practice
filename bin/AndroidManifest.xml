@@ -120,5 +120,8 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
 		</activity>
+		<activity android:label="Using Accelerometer" android:name=".Accelerate" android:screenOrientation="portrait"/>
+		<activity android:label="HttpClient" android:name="HttpExample" />
+		<activity android:label="Using JSON (Javascript Object Notation)" android:name=".HttpJson" />
     </application>
 </manifest>

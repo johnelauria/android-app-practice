@@ -36,7 +36,6 @@ public class Camera extends Activity implements View.OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// TODO Auto-generated method stub
 		setContentView(R.layout.camera);
 		setVariables();
 		openCamera.setOnClickListener(this);

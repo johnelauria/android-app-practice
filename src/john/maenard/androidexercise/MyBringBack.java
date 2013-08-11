@@ -16,7 +16,7 @@ public class MyBringBack extends View {
 	float yAxis;
 	Paint lightBlue;
 	Paint textPaint;
-	Rect middleRect = new Rect();;
+	Rect middleRect = new Rect();
 	//Typeface font; Include Custom Font
 
 	public MyBringBack(Context context) {

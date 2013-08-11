@@ -8,6 +8,7 @@ public class SQLView extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		// READ ALL DATA FROM DATABASE
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.sqlview);
 		TextView loadView = (TextView) findViewById(R.id.loadSql);

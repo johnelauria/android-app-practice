@@ -30,17 +30,56 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number" />
-        
+
     <Button
         android:id="@+id/bSaveDrink"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Rate" />
-    
+
     <Button
         android:id="@+id/bLoadDrinks"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Load" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Enter Drink id number: " />
+
+        <EditText
+            android:id="@+id/etDrinkId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:ems="10"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/bGetFromSql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Data" />
+
+    <Button
+        android:id="@+id/bModifySql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify Data" />
+
+    <Button
+        android:id="@+id/bDeleteSql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
 
 </LinearLayout>

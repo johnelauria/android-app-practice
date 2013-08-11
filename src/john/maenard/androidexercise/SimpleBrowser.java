@@ -39,6 +39,7 @@ public class SimpleBrowser extends Activity implements OnClickListener {
 		clrH.setOnClickListener(this);
 		ourWeb.getSettings().setJavaScriptEnabled(true);
 		ourWeb.getSettings().setLoadWithOverviewMode(true);
+		ourWeb.getSettings().setGeolocationEnabled(true);
 		ourWeb.getSettings().setUseWideViewPort(true);
 		ourWeb.setWebViewClient(new ourWebViewClient());
 		ourWeb.loadUrl("http://developer.android.com/index.html");

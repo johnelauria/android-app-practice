@@ -23,7 +23,7 @@ public class MainMenu extends ListActivity {
 	String menus[] = { "Dashboard", "TextPlay", "Email", "Camera", "Send",
 			"StartQuestion", "GFX", "GFXSurface", "Slider", "Tabs",
 			"SimpleBrowser", "Flipper", "SharedPrefs", "InternalStorage",
-			"ExternalStorage", "SqliteDatabase" };
+			"ExternalStorage", "SqliteDatabase", "Accelerate", "HttpExample", "HttpJson" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
