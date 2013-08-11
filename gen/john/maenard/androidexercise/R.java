@@ -40,10 +40,10 @@ public final class R {
         public static final int EDCanWrite=0x7f0b000f;
         public static final int Instruction=0x7f0b0045;
         public static final int RButtonSubmit=0x7f0b0027;
-        public static final int aboutDeveloper=0x7f0b005e;
+        public static final int aboutDeveloper=0x7f0b0061;
         public static final int aboutDeveloperContent=0x7f0b0000;
-        public static final int aboutUsMenu=0x7f0b005d;
-        public static final int action_settings=0x7f0b005c;
+        public static final int aboutUsMenu=0x7f0b0060;
+        public static final int action_settings=0x7f0b005f;
         public static final int addOne=0x7f0b0003;
         public static final int addTab=0x7f0b0051;
         public static final int almostCorrect=0x7f0b0059;
@@ -52,6 +52,7 @@ public final class R {
         public static final int bConfirmSave=0x7f0b0012;
         public static final int bDeleteSql=0x7f0b0042;
         public static final int bGetFromSql=0x7f0b0040;
+        public static final int bGetWeatherForecast=0x7f0b005d;
         public static final int bHoroscope=0x7f0b001e;
         public static final int bLoadDrinks=0x7f0b003e;
         public static final int bModifySql=0x7f0b0041;
@@ -75,8 +76,9 @@ public final class R {
         public static final int etRateDrink=0x7f0b003c;
         public static final int etSaveAs=0x7f0b0011;
         public static final int etSend=0x7f0b002a;
+        public static final int etWeather=0x7f0b005c;
         public static final int executeCmd=0x7f0b0053;
-        public static final int exitApp=0x7f0b0060;
+        public static final int exitApp=0x7f0b0063;
         public static final int flipper1=0x7f0b0016;
         public static final int flipper2=0x7f0b0017;
         public static final int flipper3=0x7f0b0018;
@@ -96,7 +98,7 @@ public final class R {
         public static final int msgContent=0x7f0b000b;
         public static final int openCamera=0x7f0b0006;
         public static final int pacificRim=0x7f0b0026;
-        public static final int preferencesMenu=0x7f0b005f;
+        public static final int preferencesMenu=0x7f0b0062;
         public static final int provider=0x7f0b0019;
         public static final int receivedString=0x7f0b0020;
         public static final int refreshWeb=0x7f0b0035;
@@ -130,6 +132,7 @@ public final class R {
         public static final int tvSend=0x7f0b0029;
         public static final int tvTabFirst=0x7f0b004c;
         public static final int tvTabSecond=0x7f0b004f;
+        public static final int tvWeatherForecast=0x7f0b005e;
         public static final int viewFlipper1=0x7f0b0015;
         public static final int webContent=0x7f0b0036;
         public static final int webURL=0x7f0b0030;
@@ -157,6 +160,7 @@ public final class R {
         public static final int tabs=0x7f030013;
         public static final int textplay=0x7f030014;
         public static final int thequestion=0x7f030015;
+        public static final int xmlparsing=0x7f030016;
     }
     public static final class menu {
         public static final int dashboard=0x7f0a0000;
