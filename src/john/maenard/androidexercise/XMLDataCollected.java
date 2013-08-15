@@ -18,7 +18,6 @@ public class XMLDataCollected {
 	}
 	
 	public String dataToString() {
-		//return "In " + city + " the Current Temperature in Kelvin is " + temp + " degrees";
 		return "The current temperature in " + city + " is " + (temp - 272.15) + " degrees celcius.\nThe current weather is " + weather;
 	}
 }
