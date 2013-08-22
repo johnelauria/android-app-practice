@@ -24,7 +24,7 @@ public class MainMenu extends ListActivity {
 			"StartQuestion", "GFX", "GFXSurface", "Slider", "Tabs",
 			"SimpleBrowser", "Flipper", "SharedPrefs", "InternalStorage",
 			"ExternalStorage", "SqliteDatabase", "Accelerate", "HttpExample",
-			"HttpJson", "XmlParsing" };
+			"HttpJson", "XmlParsing", "GLExample", "GLCubeExample", "SwipeWithTabs" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

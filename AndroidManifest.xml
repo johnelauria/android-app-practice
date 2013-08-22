@@ -1,140 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest android:versionCode="1" android:versionName="1.0"
-    package="john.maenard.androidexercise" xmlns:android="http://schemas.android.com/apk/res/android">
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <application android:allowBackup="true"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="john.maenard.androidexercise"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" android:theme="@style/AppTheme">
-        <activity android:label="@string/app_name" android:name=".Splashscreen">
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="john.maenard.androidexercise.Splashscreen"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/app_name" android:name=".Dashboard">
+        <activity
+            android:name="john.maenard.androidexercise.Dashboard"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.DASHBOARD"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.DASHBOARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/app_name" android:name=".MainMenu">
+        <activity
+            android:name="john.maenard.androidexercise.MainMenu"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.MAINMENU"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.MAINMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <!-- created by johnmaenard at 2013-07-12 17:14:41 -->
-        <activity android:label="TextPlay" android:name=".TextPlay">
+        <activity
+            android:name="john.maenard.androidexercise.TextPlay"
+            android:label="TextPlay" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.TEXTPLAY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.TEXTPLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/app_name" android:name=".Email">
+        <activity
+            android:name="john.maenard.androidexercise.Email"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.EMAIL"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.EMAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/app_name"
-            android:name=".Camera" android:screenOrientation="portrait">
+        <activity
+            android:name="john.maenard.androidexercise.Camera"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.CAMERA"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.CAMERA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <!-- created by johnmaenard at 2013-07-16 20:35:34 -->
-        <activity android:label="Sending Data to another Activity" android:name=".Send">
+        <activity
+            android:name="john.maenard.androidexercise.Send"
+            android:label="Sending Data to another Activity" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.SEND"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <!-- created by johnmaenard at 2013-07-16 20:43:47 -->
-        <activity android:label="@string/app_name" android:name=".Receive">
+        <activity
+            android:name="john.maenard.androidexercise.Receive"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.RECEIVE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.RECEIVE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!--created by johnmaenard at 2013-07-19 21:04:03-->
-        <activity android:label="@string/app_name" android:name=".StartQuestion">
+        <!-- created by johnmaenard at 2013-07-19 21:04:03 -->
+        <activity
+            android:name="john.maenard.androidexercise.StartQuestion"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.STARTQUESTION"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.STARTQUESTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!--created by johnmaenard at 2013-07-19 21:17:11-->
-        <activity android:label="@string/app_name" android:name=".TheQuestion">
+        <!-- created by johnmaenard at 2013-07-19 21:17:11 -->
+        <activity
+            android:name="john.maenard.androidexercise.TheQuestion"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.THEQUESTION"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.THEQUESTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!--created by johnmaenard at 2013-07-20 15:55:25-->
-        <activity android:label="About this app" android:name=".AboutUs" android:theme="@android:style/Theme.Dialog">
+        <!-- created by johnmaenard at 2013-07-20 15:55:25 -->
+        <activity
+            android:name="john.maenard.androidexercise.AboutUs"
+            android:label="About this app"
+            android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.ABOUTUS"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!--created by johnmaenard at 2013-07-20 16:09:44-->
-        <activity android:label="About the Developer"
-            android:name=".AboutDeveloper" android:theme="@android:style/Theme.Dialog">
+        <!-- created by johnmaenard at 2013-07-20 16:09:44 -->
+        <activity
+            android:name="john.maenard.androidexercise.AboutDeveloper"
+            android:label="About the Developer"
+            android:theme="@android:style/Theme.Dialog" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.ABOUTDEVELOPER"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.ABOUTDEVELOPER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!--created by johnmaenard at 2013-07-21 15:46:58-->
-        <activity android:label="@string/app_name" android:name=".Prefs">
+        <!-- created by johnmaenard at 2013-07-21 15:46:58 -->
+        <activity
+            android:name="john.maenard.androidexercise.Prefs"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.PREFS"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <!--created by johnmaenard at 2013-07-24 09:06:15-->
-        <activity android:label="Making Animations" android:name=".GFX"/>
-        <!--created by johnmaenard at 2013-07-24 21:59:51-->
-        <activity android:label="Drag the ball" android:name=".GFXSurface"/>
-        <!--created by johnmaenard at 2013-07-27 10:24:52-->
-        <activity android:label="Sliders" android:name=".Slider"/>
-        <!--created by johnmaenard at 2013-07-27 12:29:15-->
-        <activity android:name=".Tabs"/>
-        <!--created by johnmaenard at 2013-07-28 10:31:38-->
-        <activity android:name=".SimpleBrowser"/>
-        <!--created by johnmaenard at 2013-07-28 14:35:15-->
-        <activity android:name=".Flipper"/>
-        <!--created by johnmaenard at 2013-07-28 15:17:17-->
-        <activity android:name=".SharedPrefs"/>
-        <activity android:label="Internal Storage" android:name=".InternalStorage"/>
-        <activity android:label="External Storage" android:name=".ExternalStorage" />
-        <activity android:label="Saving in Sqlite Database" android:name=".SqliteDatabase" />
-        <activity android:label="Reading from Sqlite Database" android:name=".SQLView">
+        <!-- created by johnmaenard at 2013-07-24 09:06:15 -->
+        <activity
+            android:name="john.maenard.androidexercise.GFX"
+            android:label="Making Animations" />
+        <!-- created by johnmaenard at 2013-07-24 21:59:51 -->
+        <activity
+            android:name="john.maenard.androidexercise.GFXSurface"
+            android:label="Drag the ball" />
+        <!-- created by johnmaenard at 2013-07-27 10:24:52 -->
+        <activity
+            android:name="john.maenard.androidexercise.Slider"
+            android:label="Sliders" />
+        <!-- created by johnmaenard at 2013-07-27 12:29:15 -->
+        <activity android:name="john.maenard.androidexercise.Tabs" />
+        <!-- created by johnmaenard at 2013-07-28 10:31:38 -->
+        <activity android:name="john.maenard.androidexercise.SimpleBrowser" />
+        <!-- created by johnmaenard at 2013-07-28 14:35:15 -->
+        <activity android:name="john.maenard.androidexercise.Flipper" />
+        <!-- created by johnmaenard at 2013-07-28 15:17:17 -->
+        <activity android:name="john.maenard.androidexercise.SharedPrefs" />
+        <activity
+            android:name="john.maenard.androidexercise.InternalStorage"
+            android:label="Internal Storage" />
+        <activity
+            android:name="john.maenard.androidexercise.ExternalStorage"
+            android:label="External Storage" />
+        <activity
+            android:name="john.maenard.androidexercise.SqliteDatabase"
+            android:label="Saving in Sqlite Database" />
+        <activity
+            android:name="john.maenard.androidexercise.SQLView"
+            android:label="Reading from Sqlite Database" >
             <intent-filter>
-                <action android:name="john.maenard.androidexercise.SQLVIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="john.maenard.androidexercise.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-		</activity>
-		<activity android:label="Using Accelerometer" android:name=".Accelerate" android:screenOrientation="portrait"/>
-		<activity android:label="HttpClient" android:name="HttpExample" />
-		<activity android:label="Using JSON (Javascript Object Notation)" android:name=".HttpJson" />
-		<activity android:label="Get Weather forecast using XML" android:name=".XmlParsing" />
-		<receiver android:name=".PointlessWidget" android:label="Widgets">
-		    <intent-filter>
-		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-		    </intent-filter>
-		    <meta-data android:name="android.appwidget.provider"
-		        android:resource="@xml/widget_stuff" />
-		</receiver>
-		<activity android:label="@string/app_name" android:name=".WidgetConfig">
+        </activity>
+        <activity
+            android:name="john.maenard.androidexercise.Accelerate"
+            android:label="Using Accelerometer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="john.maenard.androidexercise.HttpExample"
+            android:label="HttpClient" />
+        <activity
+            android:name="john.maenard.androidexercise.HttpJson"
+            android:label="Using JSON (Javascript Object Notation)" />
+        <activity
+            android:name="john.maenard.androidexercise.XmlParsing"
+            android:label="Get Weather forecast using XML" />
+
+        <receiver
+            android:name="john.maenard.androidexercise.PointlessWidget"
+            android:label="Widgets" >
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff" />
+        </receiver>
+
+        <activity
+            android:name="john.maenard.androidexercise.WidgetConfig"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="john.maenard.androidexercise.GLExample"
+            android:label="OpenGL basics" />
+        <activity
+            android:name="john.maenard.androidexercise.GLCubeExample"
+            android:label="Drawing Cube in OpenGL" />
+        <activity
+            android:name="john.maenard.androidexercise.SwipeWithTabs"
+            android:label="@string/title_activity_swipe_with_tabs" >
         </activity>
     </application>
+
 </manifest>
